@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Recorded Exam Review</title>
+<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <header>
+    <h1>Recorded Exam Dashboard</h1>
+  </header>
+
+  <main>
+    <div id="studentGrid" class="grid"></div>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div class="modal-videos">
+        <div class="video-container">
+          <video id="modalScreenShare" controls></video>
+          <button class="fullscreen-btn" data-video="modalScreenShare">Fullscreen</button>
+        </div>
+        <div class="video-container">
+          <video id="modalWebcam" controls></video>
+          <button class="fullscreen-btn" data-video="modalWebcam">Fullscreen</button>
+        </div>
+        <div class="video-container">
+          <video id="modalPhone" controls></video>
+          <button class="fullscreen-btn" data-video="modalPhone">Fullscreen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
